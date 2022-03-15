@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 let books = [];
 
-generateId = () => {
+const generateId = () => {
   let id = Math.ceil(Math.random() * 100000000000);
   while (books.indexOf(id) !== -1) {
     id = Math.ceil(Math.random() * 100000000000);
