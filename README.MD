@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capstone One
+# Awesome Books
 
-> Project capstone 1: online website for a  CC Global Summit conference. A fun festival where people from more than 80 countries who believe in the value of sharing and openness and create positive change gather and share their thoughts will be held in Korea in October.
+> Awesome Books: a basic website that allows users to add/remove books from a list.You will achieve that by using JavaScript objects and arrays. You will also need to dynamically modify the DOM and add basic events.
 
 
 ## Live preview
-My capstone project can be accessed  [here](https://isaacpitwa.github.io/conference_capstone/)
+Awesome Books  can be accessed   [here](https://isaacpitwa.github.io/awesome-books/)
 
 ## Built With
 
@@ -25,18 +25,29 @@ OR  using HTTPS
 `https://github.com/isaacpitwa/awesome-books.git` 
 
 move into project directory
-`cd conference_capstone`
+`cd awesome-books`
 
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Author 1**
 
 - GitHub: [@isaacpitwa](https://github.com/isaacpitwa)
 - Twitter: [@isaacpitwa](https://twitter.com/isaacpitwa)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/isaac-pitwa)
+
+👤 **Author 2**
+
+- GitHub: [@fed1k](https://github.com/fed1k)
+- Twitter: [@fed1k](https://twitter.com/fed1k)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/fed1k)
+👤 **Author 3**
+
+- GitHub: [@mrEckendonk](https://github.com/mrEckendonk)
+- Twitter: [@mrEckendonk](https://twitter.com/mrEckendonk)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/mrEckendonk)
 
 ## Attribution
 ## 🤝 Contributing
