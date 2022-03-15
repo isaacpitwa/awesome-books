@@ -33,10 +33,11 @@ const displayBooks = () => {
     const book = methods.books[i];
     const bookElement = document.createElement('div');
     bookElement.classList.add('book');
+    (i+1)%2 !== 0 ?bookElement.classList.add('odd') :null;
 
     const h2 = document.createElement('h2');
     h2.classList.add('title');
-    h2.textContent = book.title + ' by '+ book.author ;
+    h2.textContent = `\"${book.title}\"  by ${book.author}` ;
 
     const removeBtn = document.createElement('button');
     removeBtn.classList.add(`remove-${book.id}`);
@@ -50,9 +51,6 @@ const displayBooks = () => {
     bookElement.appendChild(removeBtn);
 
     booksList.appendChild(bookElement);
-
-    const hr = document.createElement('hr');
-    booksList.appendChild(hr);
   }
   saveData();
 };

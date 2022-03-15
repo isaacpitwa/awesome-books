@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    font-family: poppins, sans-serif;
+}
 html {
   margin: 0;
 }
@@ -5,17 +9,29 @@ body{
     width: 80%;
     margin: 24px auto;
     text-align: center;
+    font-family: poppins, sans-serif;
 }
 .book{
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16px;
+}
+.book h2{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 .book button {
     height: 40px;
     padding: 0 24px;
+    
 }
-.books div.book:nth-child(odd){
-    background-color: blue;
+.book button:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+ .odd{
+    background-color: rgb(236, 235, 235);
 }
