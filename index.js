@@ -36,7 +36,7 @@ const displayBooks = () => {
 
     const h2 = document.createElement('h2');
     h2.classList.add('title');
-    h2.textContent = book.title + ' by '+ book.author ;
+    h2.textContent = `"${book.title}"` + ' by '+ book.author ;
 
     const removeBtn = document.createElement('button');
     removeBtn.classList.add(`remove-${book.id}`);

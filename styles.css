@@ -12,10 +12,26 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.book button {
-    height: 40px;
-    padding: 0 24px;
+
+.books {
+    border: 3px solid black;
+    padding: 7px;
 }
-.books div.book:nth-child(odd){
+
+.book button {
+    height: 35px;
+    padding: 0 24px;
+    background-color: #fff;
+    border: 3px solid black;
+    font-weight: bold;
+}
+.book:nth-child(2){
     background-color: blue;
+}
+
+.add-book {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
