@@ -33,11 +33,13 @@ const displayBooks = () => {
     const book = methods.books[i];
     const bookElement = document.createElement('div');
     bookElement.classList.add('book');
-    (i+1)%2 !== 0 ?bookElement.classList.add('odd') :null;
+    if ((i + 1) % 2 !== 0) {
+      bookElement.classList.add('odd');
+    }
 
     const h2 = document.createElement('h2');
     h2.classList.add('title');
-    h2.textContent = `\"${book.title}\"  by ${book.author}` ;
+    h2.textContent = `"${book.title}"  by ${book.author}`;
 
     const removeBtn = document.createElement('button');
     removeBtn.classList.add(`remove-${book.id}`);

@@ -1,60 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
-    font-family: poppins, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  font-family: poppins, sans-serif;
 }
+
 html {
   margin: 0;
 }
-body{
-    width: 80%;
-    margin: 24px auto;
-    text-align: center;
-    font-family: poppins, sans-serif;
+
+body {
+  width: 80%;
+  margin: 24px auto;
+  text-align: center;
+  font-family: poppins, sans-serif;
 }
-.book{
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
+
+.book {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
 }
-.book h2{
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: 400;
+
+.book h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
 }
 
 .books {
-    border: 3px solid black;
-    padding: 7px;
+  border: 3px solid black;
+  padding: 7px;
 }
 
 .book button {
-    height: 35px;
-    padding: 0 24px;
-    
+  height: 35px;
+  padding: 0 24px;
 }
-.book button:hover{
-    cursor: pointer;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+.book button:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
 }
-.odd{
-    background-color: rgb(236, 235, 235);
-    font-weight: bold;
+
+.odd {
+  background-color: rgb(236 235 235);
+  font-weight: bold;
 }
 
 .add-book {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
+
 .add-book input {
-    width: 50%;
-    height: 28px;
-    padding-left: 8px;
+  width: 50%;
+  height: 28px;
+  padding-left: 8px;
 }
-#add-btn{
-    margin-left: auto;
-    margin-right: 24%;
+
+#add-btn {
+  margin-left: auto;
+  margin-right: 24%;
 }
