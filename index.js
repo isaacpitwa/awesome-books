@@ -1,11 +1,19 @@
 /* eslint-disable no-unused-vars */
 let books = [];
 
+generateId = () => {
+  let id = Math.ceil(Math.random() * 100000000000);
+  while (this.books.indexOf(id) !== -1) {
+    id = Math.ceil(Math.random() * 100000000000);
+  }
+  return id;
+};
+
 const addBook = (title, author) => {
   const awesomeBook = {
     title,
     author,
-    id: books.length + 1,
+    id: generateId(),
   };
   books.push(awesomeBook);
 };
