@@ -36,11 +36,7 @@ const displayBooks = () => {
 
     const h2 = document.createElement('h2');
     h2.classList.add('title');
-    h2.textContent = book.title;
-
-    const h3 = document.createElement('h3');
-    h3.classList.add('author');
-    h3.textContent = book.author;
+    h2.textContent = book.title + ' by '+ book.author ;
 
     const removeBtn = document.createElement('button');
     removeBtn.classList.add(`remove-${book.id}`);
@@ -51,7 +47,6 @@ const displayBooks = () => {
     });
 
     bookElement.appendChild(h2);
-    bookElement.appendChild(h3);
     bookElement.appendChild(removeBtn);
 
     booksList.appendChild(bookElement);
