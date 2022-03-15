@@ -6,7 +6,7 @@
 
 
 ## Live preview
-My capstone project can be accessed  [here](https://isaacpitwa.github.io/awesome-books/)
+Awesome Books  can be accessed   [here](https://isaacpitwa.github.io/awesome-books/)
 
 ## Built With
 
@@ -25,7 +25,7 @@ OR  using HTTPS
 `https://github.com/isaacpitwa/awesome-books.git` 
 
 move into project directory
-`cd conference_capstone`
+`cd awesome-books`
 
 
 
