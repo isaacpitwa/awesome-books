@@ -113,7 +113,7 @@ const body = document.querySelector('body');
 
 const listActive = () => {
   body.removeChild(wholeForm);
-  body.appendChild(books);
+  body.appendChild(wholeForm);
 };
 const formActive = () => {
   body.removeChild(books);
