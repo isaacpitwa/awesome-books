@@ -90,18 +90,6 @@ addBtn.addEventListener('click', (e) => {
 getData();
 displayBooks();
 
-// Creating Date object for date
-
-// const date = new Date();
-
-// const datePresenter = ()=>{
-//   let month = date.getMonth.toString();
-//   let exactDate = date.getDate();
-//   let hour = date.getHours;
-// }
-// document.body.insertBefore(date, h1);
-// setInterval(datePresenter, 1000);
-
 // Referrence to navbar
 const list = document.querySelector('.list');
 const add = document.querySelector('.add');
@@ -118,14 +106,14 @@ const listActive = () => {
   contact.classList.remove('active-page');
   if (document.body.contains(wholeForm)) { body.removeChild(wholeForm); }
   if (document.body.contains(contactContainer)) { body.removeChild(contactContainer); }
-  body.insertBefore(books, footer);
+  books.classList.remove('contact-section');
   contactContainer.classList.remove('contact-section-active');
 };
 const formActive = () => {
   list.classList.remove('active-page');
   add.classList.add('active-page');
   contact.classList.remove('active-page');
-  if (document.body.contains(books)) { body.removeChild(books); }
+  if (document.body.contains(books)) { books.classList.add('contact-section'); }
   if (document.body.contains(contactContainer)) { body.removeChild(contactContainer); }
   body.insertBefore(wholeForm, footer);
   contactContainer.classList.remove('contact-section-active');
