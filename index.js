@@ -107,17 +107,18 @@ displayBooks();
 const list = document.querySelector('.list');
 const add = document.querySelector('.add');
 const contact = document.querySelector('.contact');
-const h1 = document.querySelector('h1');
-const h2 = document.querySelector('#h2');
-const wholeForm = document.querySelector('.add-book');
+const wholeForm = document.querySelector('#form-container');
+const books = document.querySelector('#books-container');
 const body = document.querySelector('body');
 
-const listActive = ()=>{
+const listActive = () => {
   body.removeChild(wholeForm);
-  body.removeChild(h2);
-}
-
+  body.appendChild(books);
+};
+const formActive = () => {
+  body.removeChild(books);
+  body.appendChild(wholeForm);
+};
 
 list.addEventListener('click', listActive);
-
-
+add.addEventListener('click', formActive);
