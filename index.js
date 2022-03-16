@@ -78,13 +78,20 @@ const title = form.querySelector('#title');
 
 const addBtn = document.querySelector('#add-btn');
 addBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const bookTitle = title.value;
-  const bookAuthor = author.value;
-  const bookId = Date.now();
-  methods.addBook(bookTitle, bookAuthor, bookId);
-  displayBooks();
-  saveData();
+  if (author.value && title.value) {
+    e.preventDefault();
+    const bookTitle = title.value;
+    const bookAuthor = author.value;
+    const bookId = Date.now();
+    methods.addBook(bookTitle, bookAuthor, bookId);
+    displayBooks();
+    saveData();
+    alert(`${title.value} and ${author.value} have been added to the list!!!`);
+    title.value = null;
+    author.value = null;
+  } else {
+    e.preventDefault();
+  }
 });
 
 getData();
