@@ -43,11 +43,12 @@ move into project directory
 - GitHub: [@fed1k](https://github.com/fed1k)
 - Twitter: [@fed1k](https://twitter.com/fed1k)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/fed1k)
+
 👤 **Author 3**
 
 - GitHub: [@mrEckendonk](https://github.com/mrEckendonk)
 - Twitter: [@mrEckendonk](https://twitter.com/mrEckendonk)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/mrEckendonk)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mike-van-eckendonk/)
 
 ## Attribution
 ## 🤝 Contributing
