@@ -66,7 +66,6 @@ const getData = () => {
   }
 };
 
-// window.onload = getData();
 window.onbeforeunload = () => {
   getData();
   displayBooks();
@@ -114,12 +113,18 @@ const footer = document.querySelector('footer');
 const contactContainer = document.querySelector('.contact-section');
 
 const listActive = () => {
+  list.classList.add('active-page');
+  add.classList.remove('active-page');
+  contact.classList.remove('active-page');
   if (document.body.contains(wholeForm)) { body.removeChild(wholeForm); }
   if (document.body.contains(contactContainer)) { body.removeChild(contactContainer); }
   body.insertBefore(books, footer);
   contactContainer.classList.remove('contact-section-active');
 };
 const formActive = () => {
+  list.classList.remove('active-page');
+  add.classList.add('active-page');
+  contact.classList.remove('active-page');
   if (document.body.contains(books)) { body.removeChild(books); }
   if (document.body.contains(contactContainer)) { body.removeChild(contactContainer); }
   body.insertBefore(wholeForm, footer);
@@ -127,6 +132,9 @@ const formActive = () => {
 };
 
 const contactActive = () => {
+  list.classList.remove('active-page');
+  add.classList.remove('active-page');
+  contact.classList.add('active-page');
   if (document.body.contains(books)) { body.removeChild(books); }
   if (document.body.contains(wholeForm)) { body.removeChild(wholeForm); }
   body.insertBefore(contactContainer, footer);
@@ -136,3 +144,4 @@ const contactActive = () => {
 list.addEventListener('click', listActive);
 add.addEventListener('click', formActive);
 contact.addEventListener('click', contactActive);
+window.onload = listActive();

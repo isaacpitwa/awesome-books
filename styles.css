@@ -75,6 +75,13 @@ nav  {
   justify-content: space-between;
   border: 3px solid black;
 }
+nav  a{
+  text-decoration: none;
+  color: black;
+}
+nav  a:hover{
+  cursor: pointer;
+}
  
 nav ul {
   list-style: none;
@@ -123,4 +130,7 @@ footer span {
 }
 .contact-section ul {
 list-style: none;
+}
+.active-page {
+  color: blueviolet;
 }
