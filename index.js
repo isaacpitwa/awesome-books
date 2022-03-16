@@ -90,3 +90,34 @@ addBtn.addEventListener('click', (e) => {
 
 getData();
 displayBooks();
+
+// Creating Date object for date
+
+// const date = new Date();
+
+// const datePresenter = ()=>{
+//   let month = date.getMonth.toString();
+//   let exactDate = date.getDate();
+//   let hour = date.getHours;
+// }
+// document.body.insertBefore(date, h1);
+// setInterval(datePresenter, 1000);
+
+// Referrence to navbar
+const list = document.querySelector('.list');
+const add = document.querySelector('.add');
+const contact = document.querySelector('.contact');
+const h1 = document.querySelector('h1');
+const h2 = document.querySelector('#h2');
+const wholeForm = document.querySelector('.add-book');
+const body = document.querySelector('body');
+
+const listActive = ()=>{
+  body.removeChild(wholeForm);
+  body.removeChild(h2);
+}
+
+
+list.addEventListener('click', listActive);
+
+
