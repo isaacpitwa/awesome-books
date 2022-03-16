@@ -118,5 +118,9 @@ footer span {
 }
  
 .contact-section-active {
+  margin-top: 20vh;
   display: block;
+}
+.contact-section ul {
+list-style: none;
 }
