@@ -110,15 +110,29 @@ const contact = document.querySelector('.contact');
 const wholeForm = document.querySelector('#form-container');
 const books = document.querySelector('#books-container');
 const body = document.querySelector('body');
+const footer = document.querySelector('footer');
+const contactContainer = document.querySelector('.contact-section');
 
 const listActive = () => {
-  body.removeChild(wholeForm);
-  body.appendChild(wholeForm);
+  if (document.body.contains(wholeForm)) { body.removeChild(wholeForm); }
+  if (document.body.contains(contactContainer)) { body.removeChild(contactContainer); }
+  body.insertBefore(books, footer);
+  contactContainer.classList.remove('contact-section-active');
 };
 const formActive = () => {
-  body.removeChild(books);
-  body.appendChild(wholeForm);
+  if (document.body.contains(books)) { body.removeChild(books); }
+  if (document.body.contains(contactContainer)) { body.removeChild(contactContainer); }
+  body.insertBefore(wholeForm, footer);
+  contactContainer.classList.remove('contact-section-active');
+};
+
+const contactActive = () => {
+  if (document.body.contains(books)) { body.removeChild(books); }
+  if (document.body.contains(wholeForm)) { body.removeChild(wholeForm); }
+  body.insertBefore(contactContainer, footer);
+  contactContainer.classList.add('contact-section-active');
 };
 
 list.addEventListener('click', listActive);
 add.addEventListener('click', formActive);
+contact.addEventListener('click', contactActive);
