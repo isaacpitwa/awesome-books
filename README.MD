@@ -4,9 +4,11 @@
 
 > Awesome Books: a basic website that allows users to add/remove books from a list.You will achieve that by using JavaScript objects and arrays. You will also need to dynamically modify the DOM and add basic events.
 
-
 ## Live preview
-Awesome Books  can be accessed   [here](https://isaacpitwa.github.io/awesome-books/)
+
+Awesome Books can be accessed [here](https://isaacpitwa.github.io/awesome-books/)
+
+![screenshot](./awesomebook.png)
 
 ## Built With
 
@@ -17,18 +19,16 @@ Awesome Books  can be accessed   [here](https://isaacpitwa.github.io/awesome-boo
 - Documented Work
 
 ## Development set up
-Clone Repository  using 
-`git clone git@github.com:isaacpitwa/awesome-books.git` 
 
-OR  using HTTPS
+Clone Repository using
+`git clone git@github.com:isaacpitwa/awesome-books.git`
 
-`https://github.com/isaacpitwa/awesome-books.git` 
+OR using HTTPS
+
+`https://github.com/isaacpitwa/awesome-books.git`
 
 move into project directory
 `cd awesome-books`
-
-
-
 
 ## Authors
 
@@ -51,6 +51,7 @@ move into project directory
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mike-van-eckendonk/)
 
 ## Attribution
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -60,7 +61,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
